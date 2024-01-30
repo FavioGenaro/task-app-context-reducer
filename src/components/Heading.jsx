@@ -34,7 +34,7 @@ const Heading = () => {
                 </Link>
                 <div className="flex-grow text-right">
                     <button 
-                        className="bg-white text-black dark:bg-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white font-semibold py-2 px-4 rounded inline-flex items-center mr-4"
+                        className="bg-white text-black dark:bg-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white font-semibold py-2 px-4 rounded inline-flex items-center mb-2"
                         onClick={handleChangeTheme}
                     >
                         {(theme === 'dark') ? 
@@ -49,7 +49,7 @@ const Heading = () => {
                         }
                     </button>
                     <Link to="/add">
-                        <button className="bg-green-500 hover:bg-green-400 text-white font-semibold py-2 px-4 rounded inline-flex items-center">
+                        <button className="bg-green-500 hover:bg-green-400 text-white font-semibold py-2 px-4 rounded inline-flex items-center ml-4">
                             <IoMdAdd/>
                             <span className="pl-2">Add Task</span>
                         </button>
