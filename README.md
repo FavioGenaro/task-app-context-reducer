@@ -4,7 +4,8 @@ Project based on this video [React CRUD con Context API y useReducer Hook](https
 
 Project made with React + Vite and deployed on Netlify: [Site]().
 
-My modifications:
+### My modifications:
 - Responsive web design
 - Persistence in LocalStorage
 - Change in task design
+- Dark Mode

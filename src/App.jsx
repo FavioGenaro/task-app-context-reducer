@@ -11,7 +11,7 @@ function App() {
     // Los hijos de GlobalProvider, van a poder acceder al contexto
     <GlobalProvider>
       {/* // h-screen alto maximo de la pantalla */}
-      <div className="h-screen text-white text-center p-5 md:p-10">
+      <div className="h-screen text-black dark:text-white text-center p-5 md:p-10 bg-orange-50 dark:bg-slate-800">
         {/* h-full, para que abarque todo el ancho disponible */}
         <div className="container mx-auto h-full">
           <Heading />

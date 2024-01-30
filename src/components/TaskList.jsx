@@ -23,17 +23,17 @@ const TaskList = () => {
                     </div>) :
                     tasks.map((task)=> (
                         <div
-                            className={`bg-gray-900 px-5 py-5 md:px-10 md:py-5 text-white shadow-2xl mb-4 flex flex-col ${task.done && "bg-opacity-40"}`}
+                            className={`bg-slate-50 text-black dark:bg-gray-900 px-5 py-5 md:px-10 md:py-5 rounded-lg dark:text-white shadow-2xl mb-4 flex flex-col ${task.done && "bg-opacity-40"}`}
                             key={task.id}
                         >
                             <div className="text-left flex">
                                 <div className={`${task.done && "opacity-50"}`}>
-                                    <h1 className="text-2xl uppercase">{task.title}</h1>
+                                    <h1 className="text-2xl uppercase ">{task.title}</h1>
                                     <h6 className="text-gray-500">{task.id}</h6>
                                     <p>{task.description}</p>
                                 </div>
                                 <button
-                                    className="bg-purple-600 hover:bg-purple-500 py-1 px-3 mt-2 h-10 ml-auto done"
+                                    className="bg-purple-600 hover:bg-purple-500 py-1 px-3 mt-2 h-10 ml-auto text-white "
                                     onClick={() => toggleTaskDone(task.id)}
                                 >
                                     {task.done ? "Undone" : "Done"}
@@ -45,7 +45,7 @@ const TaskList = () => {
                                     to={`/edit/${task.id}`}
                                     className='w-auto'
                                 >
-                                    <button className={`bg-gray-600 hover:bg-gray-500 py-2 px-4 flex items-center gap-4 ${task.done && "opacity-50"}`} disabled={task.done && "disabled"}>
+                                    <button className={`bg-gray-600 hover:bg-gray-500 text-white py-2 px-4 flex items-center gap-4 ${task.done && "opacity-50"}`} disabled={task.done && "disabled"}>
                                         <MdEdit />
                                         <span>Edit</span>
                                     </button>
@@ -53,7 +53,7 @@ const TaskList = () => {
                                 
     
                                 <button
-                                    className="bg-red-600 hover:bg-red-500 py-2 px-4 flex items-center gap-4"
+                                    className="bg-red-600 hover:bg-red-500 py-2 px-4 flex items-center gap-4 text-white"
                                     onClick={() => deleteTask(task.id)}
                                 >
                                     <MdDelete/>
