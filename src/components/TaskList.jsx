@@ -16,7 +16,7 @@ const TaskList = () => {
                 {
                     (tasks.length === 0) ? 
                     (<div>
-                        <p className='text-gray-100 opacity-50 font-bold text-2xl mb-5'>There aren't Tasks</p>
+                        <p className='text-black dark:text-gray-100 opacity-50 font-bold text-2xl mb-5'>There aren't Tasks</p>
                         <div className="imge md:w-96 m-auto">
                             <img src={emptyList} alt="Empty List" className='opacity-50'/>
                         </div>

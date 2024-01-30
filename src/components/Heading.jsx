@@ -9,13 +9,11 @@ const Heading = () => {
         if(window.matchMedia('(prefers-color-scheme: dark)').matches || document.querySelector('#root').classList.contains('dark')){
             return "dark";
         }
-        return "light";
-        
+        return "light";   
     }
 
     const [theme,setTheme] = useState(initialState);
 
-    console.log(theme)
     function handleChangeTheme(){
         setTheme((themes) => themes === "dark" ? "light" : "dark")
     }
